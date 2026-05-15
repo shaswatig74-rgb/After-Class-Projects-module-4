@@ -35,12 +35,13 @@
     }
 
     show() {
-    return this.present() + ', ' + from + ' + this.studentGrade;
-    }
+    return `${this.present()}, Grade: ${this.studentGrade}`;
 }
-let myStudent = new Grade("Tina", "grade 6");
+    }
+const myStudent = new Grade("Tina", "grade 6");
 document.getElementById("details").innerHTML =
 myStudent.show();
+document.getElementById("static-info").innerHTML = Student.schoolName;
 document.getElementById("greetings").innerHTML = Student.hello();
 </script>    
 </body>
